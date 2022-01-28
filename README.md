@@ -5,5 +5,4 @@
 * inquirer
 * console.table
 * MySQL 2
-* Express
 * dotenv
