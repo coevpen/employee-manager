@@ -11,6 +11,16 @@ async function main(){
     database: process.env.DB_NAME
     });
 
+    console.log(
+        `         ---------------------------------------------------
+        |                                                   |
+        |                 Welcome To                        |
+        |                                                   |
+        |               Employee Manager                    |
+        |                                                   |
+         ---------------------------------------------------`
+    );
+
     startPrompt.mainMenu();
 }
 
