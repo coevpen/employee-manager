@@ -228,24 +228,9 @@ function addEmployee(){
 // updates employee role
 function updateEmployeeRole(){
     console.log("function called");
+    mainMenu();
 
 }
-
-function selectManagers(){
-    var allManagers = [];
-    // holds query to assist in finding the manager
-    const managerFind = `SELECT first_name, last_name FROM employee WHERE manager_id IS NULL`;
-
-    // grabs employee names where the manager id field is null
-    db_connection.query(managerFind, (err, res) => {
-        if(err) throw err;
-        for( var i = 0; i < res.length; i++){
-            allManagers.push(res[i].first_name + " " + res[i].last_name);
-        }
-    });
-    return allManagers;
-}
-
 
 
 /*
@@ -330,18 +315,6 @@ function addRole(){
             });
         });
     });
-}
-
-// selects all roles
-function selectRoles(){
-    var allRoles = [];
-    db_connection.query(`SELECT * from employee_role`, (err, res) => {
-        if(err) throw err;
-        for( var i = 0; i < res.length; i++){
-            allRoles.push(res[i].title);
-        }
-    });
-    return allRoles;
 }
 
 
