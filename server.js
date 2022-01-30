@@ -361,7 +361,6 @@ function addDepartment(){
             console.log("\n");
             console.log("Department added \n");
             showDepartments();
-            mainMenu();
         });
     });
 

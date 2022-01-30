@@ -27,3 +27,6 @@ I first attempted to put functions into different files but ran into depency iss
 conflicts, I abandoned that course of action and put everything into one file. I attempted to use
 mysql promises but I couldn't figure out how to get it to work properly. I abandoned this as well and 
 decided to go with brute forcing whatever would work. 
+
+## Visual
+![](./src/animatino.gif)
